@@ -1,8 +1,11 @@
-<p id="notice"><%= notice %></p>
+<% if notice.present? %>
+  <p class="alert alert-success">
+    <%= notice %>
+  </p>
+<% end %>
 
 <p>
-  <strong>Title:</strong>
-  <%= @post.title %>
+  <h2><%= @post.title %></h2>
 </p>
 
 <p>
