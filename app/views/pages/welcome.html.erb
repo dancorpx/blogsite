@@ -1,9 +1,4 @@
-<h1>Welcome</h1>
-
-<p>
-  This is my blogsite built using Ruby on Rails.
-</p>
-
-<p>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?
-</p>
+<% @posts.each do |post| %>
+      <%= render 'posts/post', post: post %>
+      <br><br>
+<% end %>
