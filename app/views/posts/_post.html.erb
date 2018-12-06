@@ -12,11 +12,12 @@
 
 <p>
   <% if post.kind == 'image' %>
-    <%= image_tag post.content, style: "width: 100%" %>
+    <%= image_tag post.image_url, style: "width: 100%" %> 
+    <%= simple_format post.content %>
     <% else %>
     <%= simple_format post.content %>
   <% end %>
-  </p>
+</p>
 
 <p class="text-muted">
   <small>  

@@ -19,9 +19,11 @@
   <div class="form-group">
     <%= form.label :kind %><br>
     <%= form.select :kind, ["text", "image"], {}, class: "form-control" %><br>
-    A dropdown...
-    </div>
-
+  </div>
+  <div class="form-group">
+    <%= form.label :image_url %><br>
+    <%= form.text_area :image_url, class: "form-control" %>  
+  </div>
   <div class="form-group">
     <%= form.label :content %>
     <%= form.text_area :content, class: "form-control" %>
